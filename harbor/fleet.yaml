@@ -1,3 +1,4 @@
 namespace: harbor
+defaultNamespace: harbor
 helm:
   chart: https://github.com/rancher/partner-charts/raw/main/assets/harbor/harbor-1.12.3.tgz
