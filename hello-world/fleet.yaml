@@ -6,7 +6,7 @@ imageScans:
       range: "*"
     alphabetical:
       order: asc
-  image: "harbor-molmedo.do.support.rancher.space/imagenscan/nginx" # {"$imagescan": "img-scan"}
+  image: "harbor-molmedo.do.support.rancher.space/imagenscan/nginx:v0.0.0" # {"$imagescan": "img-scan"}
   tagName: img-scan
   interval: 1m
   secretRef:
