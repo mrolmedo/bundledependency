@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: nginxhello
-        image: harbor-molmedo.do.support.rancher.space/imagenscan/nginx:v0.0.0-1 # {"$imagescan": "img-scan"}
+        image: harbor-molmedo.do.support.rancher.space/imagenscan/nginx:v0.0.0-12 # {"$imagescan": "img-scan"}
         ports:
         - containerPort: 80
