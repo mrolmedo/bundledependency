@@ -3,7 +3,7 @@ namespace: fleetsacan01
 imageScans:
 - policy:
     semver:
-      range: "0.0.0-"
+      range: ">=0.0.0-"
     alphabetical:
       order: asc
   image: "harbor-molmedo.do.support.rancher.space/imagenscan/nginx"
