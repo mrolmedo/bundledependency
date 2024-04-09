@@ -37,7 +37,7 @@ metadata:
   namespace: hello
 spec:
   rules:
-    - host: molmedo-tf-do-rke.do.support.rancher.space
+    - host: 64.226.108.243.sslip.io
       http:
         paths:
           - backend:
