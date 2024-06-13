@@ -47,5 +47,5 @@ spec:
                 name: nginx-project
                 port:
                   number: 80
-            path: /hellohello
+            path: /hello
             pathType: Prefix
