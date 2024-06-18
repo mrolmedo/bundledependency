@@ -39,7 +39,7 @@ metadata:
   namespace: hellohello
 spec:
   rules:
-    - host: 68.183.208.233.sslip.io
+    - host: 46.101.149.76.sslip.io
       http:
         paths:
           - backend:
