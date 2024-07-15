@@ -1,0 +1,5 @@
+defaultnamespace: oauth2-proxy
+helm:  
+  releaseName: oauth2-proxy
+  chart:  oauth2-proxy
+  repo: https://github.com/oauth2-proxy/manifests
