@@ -1,3 +1,2 @@
 defaultNamespace: kube-system
-helm:
-  releaseName: rke-cluster-config
+takeownership: true
