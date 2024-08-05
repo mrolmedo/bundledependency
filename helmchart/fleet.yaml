@@ -1,2 +1,3 @@
 defaultNamespace: kube-system
+release-name: helmchart-helmchart
 takeownership: true
