@@ -11,3 +11,5 @@ spec:
         - key: "key"
           operator: "Exists"
           effect: "NoSchedule"
+
+takeOwnership: true
