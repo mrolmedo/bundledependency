@@ -1,4 +1,4 @@
 defaultNamespace: kube-system
 helm:
   releaseName: helmchart
-takeownership: true
+  takeOwnership: true
