@@ -8,7 +8,7 @@ spec:
   valuesContent: |-
     controller:
       tolerations:
-        - key: "key"
+        - key: "mykey"
           operator: "Exists"
           effect: "NoSchedule"
 
