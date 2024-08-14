@@ -4,3 +4,4 @@ helm:
   repo: https://charts.rancher.io
   releaseName: logging-crd
   version: 103.1.1+up4.4.0
+  takeOwnership: true
