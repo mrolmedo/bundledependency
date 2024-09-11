@@ -37,7 +37,7 @@ metadata:
   namespace: hello
 spec:
   rules:
-    - host: 64.226.79.214.sslip.io.sslip.io
+    - host: 64.226.79.214.sslip.io
       http:
         paths:
           - backend:
