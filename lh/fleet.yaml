@@ -41,3 +41,4 @@ diff:
     name: settings.longhorn.io
     operations:
     - {"op": "replace", "path": "/status"}
+  #https://github.com/longhorn/longhorn/issues/6935
