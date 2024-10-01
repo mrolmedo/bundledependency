@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: pstools-app-node
-  replicas: 4
+  replicas: 1
   template:
     metadata:
       labels:
