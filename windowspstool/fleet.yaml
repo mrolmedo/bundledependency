@@ -17,6 +17,8 @@ spec:
           image: mbuilsuse/pstools:v0.2.0
           ports:
             - containerPort: 3000
+      nodeSelector:
+        beta.kubernetes.io/os: windows
 ---
 apiVersion: v1
 kind: Service
