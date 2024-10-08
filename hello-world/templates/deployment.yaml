@@ -38,12 +38,11 @@ metadata:
 spec:
   rules:
     - host: ${{ .Values.ingress.hosts.host}}
-      http:
-        paths:
-          - backend:
-              service:
-                name: nginx-project
-                port:
-                  number: 80
+      paths:
+        - backend:
+            service:
+              name: nginx-project
+              port:
+                number: 80
             path: /hello01
             pathType: Prefix
