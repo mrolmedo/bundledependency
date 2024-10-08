@@ -1,1 +1,3 @@
-    host: ${ .ClusterValues.worker }.sslip.io
+ ingress:
+   hosts:
+     - host:  ${ .ClusterValues.worker }.sslip.io
