@@ -37,7 +37,7 @@ metadata:
   namespace: hello
 spec:
   rules:
-    - host: ${ .Values.ingress.hosts }
+    - host: 209.38.234.174.sslip.io
       paths:
         - backend:
             service:
