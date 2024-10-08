@@ -37,7 +37,7 @@ metadata:
   namespace: hello
 spec:
   rules:
-    - host: ${`{ .ClusterValues.worker}`}.sslip.io
+    - host: ${.ClusterValues.worker}.sslip.io
       http:
         paths:
           - backend:
