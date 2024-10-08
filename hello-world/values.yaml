@@ -1,2 +1,1 @@
-    hosts:
-      - host: ${ .ClusterValues.worker }.sslip.io
+    host: ${ .ClusterValues.worker }.sslip.io
