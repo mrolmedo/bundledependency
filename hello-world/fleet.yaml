@@ -1,1 +1,4 @@
 defaultNamespace: hello
+  valuesFiles:
+  - values.yaml
+  
