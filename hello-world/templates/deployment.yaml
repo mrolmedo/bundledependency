@@ -34,15 +34,16 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: hellohello
-  namespace: hello
+  namespace: hellohello
 spec:
   rules:
-    - host: 209.38.234.174.sslip.io
-      paths:
-        - backend:
-            service:
-              name: nginx-project
-              port:
-                number: 80
-            path: /hello01
+    - host: 68.183.208.233.sslip.io
+      http:
+        paths:
+          - backend:
+              service:
+                name: nginx-project
+                port:
+                  number: 80
+            path: /hello
             pathType: Prefix
