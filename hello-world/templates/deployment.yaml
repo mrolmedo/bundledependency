@@ -37,7 +37,7 @@ metadata:
   namespace: hello
 spec:
   rules:
-    - host: ${{ index .Values.ingress.hosts "host"}}
+    - host: ${{ index .Values.ingress.hosts.host }}
       paths:
         - backend:
             service:
