@@ -8,8 +8,6 @@ spec:
     - ReadWriteMany
   capacity:
     storage: 2Gi
-  hostPath:
-    path: /data
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
