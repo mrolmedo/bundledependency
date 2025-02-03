@@ -5,7 +5,7 @@ metadata:
 spec:
   storageClassName: longhorn
   accessModes:
-    - ReadWriteOnce
+    - ReadWriteMany
   capacity:
     storage: 2Gi
   hostPath:
