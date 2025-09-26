@@ -3,17 +3,14 @@ helm:
   chart: rancher-logging
   repo: https://charts.rancher.io
   releaseName: rancher-logging
-  version: 100.1.3+up3.17.7
+  version: v104.2.1+up4.8.0
   #values: 
   #  engine: global.fleet.clusterLabels.clustertype
 
 targetCustomizations:
-- name: molmedo
-  kustomize:
-    dir: overlay
-  clusterSelector:
+- clusterSelector:
     matchLabels:
-      management.cattle.io/cluster-display-name: ekscluster
+      management.cattle.io/cluster-name: c-m-268djkdr
 diff:
   comparePatches:
   - apiVersion: logging.banzaicloud.io/v1beta1
