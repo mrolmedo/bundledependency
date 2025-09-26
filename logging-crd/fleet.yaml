@@ -4,3 +4,7 @@ helm:
   repo: https://charts.rancher.io
   releaseName: logging-crd
   version: v104.2.1+up4.8.0
+targetCustomizations:
+  - clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-name: c-m-268djkdr
