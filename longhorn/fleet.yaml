@@ -1,12 +1,23 @@
 defaultNamespace: longhorn-system
 helm:
+  repo: https://charts.longhorn.io
   chart: longhorn
-  repo: https://charts.rancher.io
+  version: v1.10.0
   releaseName: longhorn
-  #version: "100.1.1+up1.2.3"
-  version: "100.2.0+up1.3.0"
-  #version: "101.1.0+up1.3.2"
-  #version: 100.3.1+up1.4.1
-  #version: 100.2.3+up1.3.2
-dependsOn:
-- name: lhgitrepo-longhorn-crd
+diff:
+  comparePatches:
+  - apiVersion: apiextensions.k8s.io/v1
+    kind: CustomResourceDefinition
+    name: engineimages.longhorn.io
+    operations:
+    - {"op": "replace", "path": "/status"}
+  - apiVersion: apiextensions.k8s.io/v1
+    kind: CustomResourceDefinition
+    name: nodes.longhorn.io
+    operations:
+    - {"op": "replace", "path": "/status"}
+  - apiVersion: apiextensions.k8s.io/v1
+    kind: CustomResourceDefinition
+    name: volumes.longhorn.io
+    operations:
+    - {"op": "replace", "path": "/status"}
