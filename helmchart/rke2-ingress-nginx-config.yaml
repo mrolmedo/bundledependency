@@ -1,13 +1,13 @@
 apiVersion: helm.cattle.io/v1
 kind: HelmChartConfig
 metadata:
-  name: rke2-ingress-nginx
-  namespace: kube-system
+ name: rke2-ingress-nginx
+ namespace: kube-system
 spec:
-  valuesContent: |-
-    controller:
-      tolerations:
-        - key: "key"
-          operator: "Exists"
-          effect: "NoSchedule"
-
+ valuesContent: |-
+   controller:
+     config:
+       # Configures client_max_body_size (e.g., to prevent 413 errors)
+       proxy-body-size: "5m" 
+       # Configures client_body_buffer_size (e.g., to prevent disk buffering warnings)
+       client-body-buffer-size: "5m" 
