@@ -9,14 +9,14 @@ metadata:
       name: hello-kubernetes
       port:
         number: 80
-  rules:
-    - host: 143.198.241.125.nip.io
-      http:
-        paths:
-          - backend:
-              service:
-                name: hello-kubernetes
-                port:
-                  number: 80
-            path: /hello
-            pathType: Prefix
+rules:
+  - host: 143.198.241.125.nip.io
+    http:
+      paths:
+        - backend:
+            service:
+              name: hello-kubernetes
+              port:
+                number: 80
+          path: /hello
+          pathType: Prefix
