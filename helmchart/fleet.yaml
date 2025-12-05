@@ -1,4 +1,4 @@
 defaultNamespace: kube-system
 helm:
-  releaseName: helmchart
+  releaseName: rke2-ingress-nginx
   takeOwnership: true
