@@ -1,4 +1,4 @@
 defaultNamespace: kube-system
 helm:
   releaseName: rke2-config-ingress
-  #takeOwnership: true
+  takeOwnership: true
