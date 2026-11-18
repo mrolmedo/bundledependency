@@ -1,1 +1,26 @@
-defaultNamespace: twenty
+defaultNamespace: cosign-system
+
+helm:
+  releaseName: policy-controller
+  repo: https://sigstore.github.io/helm-charts
+  chart: policy-controller
+  version: "0.15.1"
+
+diff:
+  comparePatches:
+    - apiVersion: "admissionregistration.k8s.io/v1"
+      kind: "MutatingWebhookConfiguration"
+      name: "policy.sigstore.dev"
+      operations:
+        - op: "remove"
+          path: "/webhooks/0/clientConfig/caBundle"
+        - op: "remove"
+          path: "/webhooks/0/rules"
+    - apiVersion: "admissionregistration.k8s.io/v1"
+      kind: "ValidatingWebhookConfiguration"
+      name: "policy.sigstore.dev"
+      operations:
+        - op: "remove"
+          path: "/webhooks/0/clientConfig/caBundle"
+        - op: "remove"
+          path: "/webhooks/0/rules"
