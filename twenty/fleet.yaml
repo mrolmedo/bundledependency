@@ -6,6 +6,7 @@ helm:
   chart: policy-controller
   version: "0.10.8"
   createNamespace: true
+  force: true
   values:
     webhook:
       image:
