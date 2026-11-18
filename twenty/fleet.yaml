@@ -2,8 +2,15 @@ defaultNamespace: cosign-system
 
 helm:
   releaseName: policy-controller
-  chart: https://github.com/sigstore/helm-charts.git//charts/policy-controller?ref=main
-
+  repo: https://sigstore.github.io/helm-charts
+  chart: policy-controller
+  version: "0.10.8"
+  createNamespace: true
+  values:
+    webhook:
+      image:
+        repository: ghcr.io/sigstore/policy-controller/policy-controller
+        version: v0.15.1
 
 diff:
   comparePatches:
